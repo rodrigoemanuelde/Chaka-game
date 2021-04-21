@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Chaka´s</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="body-content">
+				<div class="logo"></div>
+				<div class="title">Chacka</div>
+				<div class="sub-title">GAME</div>
+				<div class="input">
+					<form id="formPoint">
+						<input
+							type="number"
+							name="point"
+							placeholder="Max points"
+							id="pointMax"
+							class="inputPoint"
+						/>
+						<button class="pointSubmit">OK</button>
+					</form>
+					<form id="formPlayer">
+						<input
+							type="text"
+							placeholder="Player's name"
+							id="namePlayer"
+							class="inputPlayer"
+						/>
+						<button class="playerSubmit" type="submit">
+							Add
+						</button>
+					</form>
+				</div>
+				<div class="playerAdd">
+					<h2>Players</h2>
+					<div class="insertPlayer" id="insertPlayer"></div>
+				</div>
+				<div class="point" id="point"></div>
+			</div>
+			<div class=""></div>
+		</div>
+		<template id="template">
+			<div id="player">
+				<p class="player"></p>
+				<p class="point"></p>
+				<h3>
+					<i class="fas fa-plus"></i>
+				</h3>
+			</div>
+		</template>
+		<script src="app.js"></script>
+	</body>
+</html>
